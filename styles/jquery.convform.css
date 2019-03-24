@@ -1,0 +1,202 @@
+.typing_loader{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    -webkit-animation: typing 1s linear infinite alternate;
+    -moz-animation: typing 1s linear infinite alternate;
+    -ms-animation: typing 1s linear infinite alternate;
+    animation: typing 1s linear infinite alternate;
+    position: relative;
+    left: -12px;
+    margin: 7px 15px 6px;
+}
+.to .typing_loader {
+    animation: typing-blue 1s linear infinite alternate;
+}
+
+@-webkit-keyframes typing{
+    0%{
+        background-color: rgba(0, 191, 255, 1);
+        box-shadow: 12px 0px 0px 0px rgba(255,255,255,0.4),
+        24px 0px 0px 0px rgba(0, 191, 255,0.2);
+    }
+    50% {
+        background-color: rgba(0, 191, 255, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 191, 255,1),
+        24px 0px 0px 0px rgba(0, 191, 255,0.4);
+    }
+    100%{ background-color: rgba(0, 191, 255, 0.2);
+        box-shadow: 12px 0px 0px 0px rgba(0, 191, 255,0.4),
+        24px 0px 0px 0px rgba(0, 191, 255,1);
+    }
+}
+
+@-moz-keyframes typing{
+    0%{
+        background-color: rgba(0, 191, 255, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0, 191, 255,0.4),
+        24px 0px 0px 0px rgba(0, 191, 255,0.2);
+    }
+    50% {
+        background-color: rgba(0, 191, 255, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 191, 255,1),
+        24px 0px 0px 0px rgba(0, 191, 255,0.4);
+    }
+    100%{ background-color: rgba(0, 191, 255, 0.2);
+        box-shadow: 12px 0px 0px 0px rgba(0, 191, 255,0.4),
+        24px 0px 0px 0px rgba(0, 191, 255,1);
+    }
+}
+
+@keyframes typing-blue{
+    0%{
+        background-color: rgba(0, 191, 255, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0, 191, 255, 0.4),
+        24px 0px 0px 0px rgba(0, 191, 255, 0.2);
+    }
+    50% {
+        background-color: rgba(0, 191, 255, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 191, 255, 1),
+        24px 0px 0px 0px rgba(0, 191, 255,0.4);
+    }
+    100%{ background-color: rgba(0, 191, 255 0.2);
+        box-shadow: 12px 0px 0px 0px rgba(0, 191, 255,0.4),
+        24px 0px 0px 0px rgba(0, 191, 255,1);
+    }
+}
+@keyframes typing{
+    0%{
+        background-color: rgba(0, 191, 255, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0, 191, 255,0.4),
+        24px 0px 0px 0px rgba(0, 191, 255,0.2);
+    }
+    50% {
+        background-color: rgba(0, 191, 255, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 191, 255,1),
+        24px 0px 0px 0px rgba(0, 191, 255,0.4);
+    }
+    100%{ background-color: rgba(0, 191, 255, 0.2);
+        box-shadow: 12px 0px 0px 0px rgba(0, 191, 255,0.4),
+        24px 0px 0px 0px rgba(0, 191, 255,1);
+    }
+}
+
+form.convFormDynamic {
+    position: relative;
+}
+
+div.conv-form-wrapper div#messages {
+    max-height: 100%; /*71vh*/
+    height: auto !important;
+    overflow-y: scroll;
+}
+div.conv-form-wrapper {
+    position: relative;
+}
+div.conv-form-wrapper div.wrapper-messages {
+    position: relative;
+    height: 600px;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+div.conv-form-wrapper div#messages {
+    transition: bottom 0.10s, padding-bottom 0.10s;
+    position: absolute;
+    bottom: 0;
+    height: auto !important;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+
+
+
+div.conv-form-wrapper div.options {
+    word-wrap: normal;
+    white-space: nowrap;
+    overflow-x: scroll;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    transform: translateY(-7px);
+}
+div.conv-form-wrapper div.options:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+div.conv-form-wrapper div.options div.option {
+    padding: 2vh 3vw;
+    border: 1px solid rgba(0, 191, 255,0.3);
+    display: inline-block;
+    margin: 6px;
+    background: #1E90f0;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 20px;
+    word-wrap: break-word;
+}
+
+div.conv-form-wrapper div.message {
+    animation: slideTop 0.15s ease;
+}
+div.conv-form-wrapper div.message:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+div.conv-form-wrapper  div.message.ready {
+    animation: bounceIn 0.2s ease;
+    transform-origin: 0 0 0;
+}
+div.conv-form-wrapper  div#messages div.message {
+    border-radius: 20px;
+    padding: 12px 22px;
+    font-size: 0.905rem;
+    color: #222;
+    display: inline-block;
+    padding: 15px 20px 13px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    float: right;
+    clear: both;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+div.conv-form-wrapper  div#messages div.message.to {
+    background: #ffffff;
+    color: #6f6f6f;
+    border: 1px solid rgba(0, 191, 255,0.09);
+    box-shadow: 6px 7px 28px rgba(65, 105, 225, 0.3);
+    float: left;
+    border-top-left-radius: 0;
+}
+div.conv-form-wrapper div#messages div.message.from {
+    background: #1E90f0;
+    color: #ffffff;
+    border-top-right-radius: 0;
+}
+.message.to+.message.from, .message.from+.message.to {
+    margin-top: 10px;
+}
+div.conv-form-wrapper div.options div.option:hover {
+    background: #1f90ff;
+    box-shadow: 6px 7px 28px rgba(65, 105, 225, 0.3);
+}
+
+.no-border {
+    border: none !important;
+}
+.dragscroll {
+    cursor: grab;
+}
+div.conv-form-wrapper div#messages::-webkit-scrollbar, div#feed ul::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+span.clear {
+    display: block;
+    clear: both;
+}

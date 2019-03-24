@@ -1,0 +1,37 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+html, body {
+	font-size: 17px;
+}
+section#bot-area {
+	background: #ffffff;
+    position: relative;
+    padding: 0;
+    min-height: 100vh;
+    transition: height 9999s;
+}
+.vertical-align {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-60%);
+	left: 0;
+	width: 100%;
+}
+.map {
+	background: #fff;  
+}
+.btn-group {
+    float: right;
+    margin: 10px;
+}
+.logo {
+    height: 9vh;
+    margin: 10px;
+}
+.top {
+    margin-top: 13px; 
+    margin-right: 0px;
+    margin-left: 0px; 
+}
+
